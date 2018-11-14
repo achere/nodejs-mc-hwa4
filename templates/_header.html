@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <!-- General Settings -->
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="en-us">
+    <base href="{global.baseUrl}" />
+    <!-- Meta Tags -->
+    <title>{head.title} | {global.appName}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{head.description}">
+    <!-- Static Assets -->
+    <link type="image/x-icon" rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" type="text/css" href="public/app.css" />
+  </head>
+  <body class="{body.class}">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+      <a class="pure-menu-heading" href="/">
+        <img src="public/logo.png" alt="Logo" style="width:40px"/>
+      </a>
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item">
+            <a href="/" class="pure-menu-link">Home</a>
+        </li>
+        <li class="pure-menu-item loggedOut">
+          <a href="/account/create" class="pure-menu-link">Signup</a>
+        </li>
+        <li class="pure-menu-item loggedOut">
+          <a href="/session/create" class="pure-menu-link">Login</a>
+        </li>
+        <li class="pure-menu-item loggedIn">
+          <a href="shop/menu" class="pure-menu-link">Menu</a>
+        </li>
+        <li class="pure-menu-item loggedIn">
+          <a href="shop/cart" class="pure-menu-link">
+            Cart
+            <span id="cartItems"></span>
+          </a>
+        </li>
+        <li class="pure-menu-item loggedIn">
+          <a href="/account/edit" class="pure-menu-link">Account Settings</a>
+        </li>
+        <li class="pure-menu-item loggedIn">
+          <a href="#" class="pure-menu-link" id="logoutButton">Logout</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Page-Specific Content -->
+    <div class="content">

@@ -1,0 +1,21 @@
+<div class="centered" id="payContent">
+    <form class="pure-form pure-form-stacked" method="POST" action="api/pay">
+      <div class="error"></div>
+      <fieldset>
+        <b>Pizzas:</b>
+        <div id="pizzas"></div>
+        <b>Total:</b>
+        <span id="total"></span>
+      </fieldset>
+      <fieldset>
+        <label for="number">Card Number</label>
+        <input type="text" name="number" maxlength="16">
+        <label for="exp_month">Expiration Date</label>
+        <input type="number" name="exp_month" style="display: inline" min=1 max=12 placeholder="month">
+        <input type="number" name="exp_year" style="display: inline" min=2018 max=2100 placeholder="year">
+        <label for="cvc">CVC</label>
+        <input type="number" name="cvc" min=1 max=999>
+      </fieldset>
+      <button type="submit" class="pure-button pure-button-primary">Pay</button>
+    </form>
+  </div>

@@ -1,0 +1,22 @@
+<div class="centered">
+    <form class="pure-form pure-form-stacked" method="PUT" action="api/users">
+      <div class="error"></div>
+      <div id="message"></div>
+      <fieldset>
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Enter your name">
+        <label for="address">Street Address</label>
+        <input type="text" name="address" placeholder="Enter your street address">
+      </fieldset>
+      <fieldset>
+        <label for="email">Email address</label>
+        <input type="email" name="email" disabled>
+      </fieldset>
+      <fieldset>
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="********">
+      </fieldset>
+      <button type="submit" class="pure-button pure-button-primary">Apply changes</button>
+      <button type="button" class="pure-button button-error">Delete Account</button>
+    </form>
+</div>
